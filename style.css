@@ -1,0 +1,292 @@
+/* Theme Name: cc-blog
+Theme URI:liwenjie.site
+Author: Liwenjie制作
+Author URI: liwenjie.site
+Description: 我的第一个wordpress模板，模板制作联系QQ：820876312
+Version: 1.1 */
+@charset "utf-8";
+/* CSS Document */
+a {
+    color: #48cfad;
+    transition: all 0.3s ease-in-out 0s;
+}
+body {
+    background-color: #f7f7f7;
+    color: #6b6e80;
+    font-family: Raleway,sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    margin: 0;
+    padding: 30px 0 0;
+}
+/*导航*/
+.content-wrapper {
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.content-article{padding:20px;}
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.navbar-default .navbar-brand img {
+    margin-top: -15px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: #37bc9b;
+    border-radius: 2px;
+    color: #fff;
+}
+/*幻灯片*/
+.slider-show {
+  width: 900px;
+  height: 482px;
+  background: #ccc;
+  position: relative;
+  margin: 100px auto 0;
+  overflow: hidden;
+}
+.slider-show ul {
+  list-style: none;
+  width: 3000px;
+  padding: 0;
+  position: absolute;
+}
+.slider-show ul li {
+  float: left;
+  width: 900px;
+  height: 482px;
+  padding: 0;
+}
+.nav{
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+}
+.nav span {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  background: #000;
+  margin: 0 5px 0 0;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.nav span.selected {
+  background: #ccc;
+}
+
+
+/*幕布*/
+.jumbotron{
+	padding:20px !important;
+	font-size:16px;
+	line-height:24px;
+	}
+/*页面*/	
+.heading-title {
+    border-bottom: 1px solid #efefef;
+    display: block;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+}
+.blog-post-tags {
+    display: block;
+    margin: 30px 0;
+}
+.blog-post-tags .tag-list {
+    list-style-type: none;
+    margin: 10px 0 0;
+    padding: 0;
+}
+.blog-post-tags .tag-list > li {
+    display: inline-block;
+}
+.blog-post-tags .tag-list > li > a {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    color: #6b6e80;
+    display: block;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 2px 0;
+    padding: 4px 10px;
+}
+.blog-post-tags .tag-list > li > a:focus, .blog-post-tags .tag-list > li > a:hover {
+    background-color: #37bc9b;
+    border: 1px solid #37bc9b;
+    color: #fff;
+    text-decoration: none;
+}
+.blog-post-author {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    display: block;
+    margin: 15px 0;
+    padding: 20px;
+}
+/*左内容*/
+.blog-post h2 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.blog-post .entry_meta{
+	margin:2px 0;
+	}
+.btn-secondary {
+    background-color: #48cfad;
+    border-color: #37bc9b;
+    border-radius: 2px;
+    color: #fff;
+}
+.post-des{font-size:16px;}
+.btn-secondary.active, .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover, .open > .dropdown-toggle.btn-secondary {
+    background-color: #37bc9b;
+    border-color: #37bc9b;
+    color: #fff;
+}
+/*侧边栏*/
+.widget-sidebar,.widget-footer{margin-bottom: 30px;}
+.widget-sidebar .widget-title{display:block;margin-bottom:25px;}
+.widget-sidebar .widget-title h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0;
+    position: relative;
+}
+.widget-sidebar .widget-title h3::before{background:#37bc9b;content:"";height:1px;left:0;bottom:-8px; position:absolute;width:40px;}
+.widget-sidebar ul li  a{ border-bottom:1px solid #efefef;color:#6b6e80;display:block;margin:4px 0;position: relative;padding-bottom:5px;}
+.widget-sidebar ul > li > a::before {
+    content: "";
+    font-family: FontAwesome;
+    font-size: 11px;
+    padding-right: 15px;
+}
+.widget-sidebar ul > li > a:hover{
+    color: #37bc9b;
+    text-decoration: none;
+}
+.footer .widget-footer h2 {
+    font-weight: 800;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.widget-footer .widget-title h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 0;
+    position: relative;
+}
+.widget-footer .widget-title h3::before {
+    background: #37bc9b none repeat scroll 0 0;
+    bottom: -8px;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    width: 40px;
+}
+/*底部*/
+.footer {
+    background-color: #434a54;
+    border-bottom: 1px solid #212121;
+    color: #eee;
+    margin-top: 30px;
+    padding: 60px 0 40px;
+    width: 100%;
+}
+.footer .widget-footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer .widget-footer ul > li {
+    border-bottom: 1px dotted #6b6e80;
+    padding: 4px 0;
+}
+.footer .widget-footer ul > li::before {
+    content: "";
+    font-family: FontAwesome;
+    font-size: 14px;
+    padding-right: 15px;
+}
+.copyright {
+    background-color: #212121;
+    border-top: 1px solid #434a54;
+    color: #eee;
+    padding: 30px 0 15px;
+    position: relative;
+    width: 100%;
+}
+.btn-scrolltop {
+    bottom: 15px;
+    left: 50%;
+    margin-left: -15px;
+    position: absolute;
+    z-index: 3;
+}
+.btn-secondary {
+    background-color: #48cfad;
+    border-color: #37bc9b;
+    border-radius: 2px;
+    color: #fff;
+}
+.copyright-right {
+    text-align: right;
+}
+/*媒体判断*/
+@media screen and (max-width:768px){
+.copyright-right,.copyright-left{text-align:center;}
+.navbar-brand{margin-bottom:15px;}
+}
+/*分页样式*/
+.wp-pagenavi .current{
+    background-color: #337ab7;
+    border-color: #337ab7;
+    color: #fff;
+    cursor: default;
+    z-index: 2;
+}
+.wp-pagenavi a, .wp-pagenavi span {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #337ab7;
+    float: left;
+    line-height: 1.42857;
+    margin-left: -1px;
+    padding: 6px 12px;
+    position: relative;
+    text-decoration: none;
+}
+.wp-pagenavi a:first-child,.wp-pagenavi span:first-child{
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    margin-left: 0;
+}
+.wp-pagenavi a:last-child,.wp-pagenavi span:last-child{
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.wp-pagenavi a:focus, .wp-pagenavi a:hover,.wp-pagenavi span:focus, .wp-pagenavi span:hover {
+    background-color: #eee;
+    border-color: #ddd;
+    color: #23527c;
+    z-index: 3;
+}
